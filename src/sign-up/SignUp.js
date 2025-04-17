@@ -117,7 +117,7 @@ export default function SignUp(props) {
     }
 
     try {
-      const response = await axios.post('http://127.0.0.1:8000/api/accounts/register/', formData);
+      const response = await axios.post('https://myproject-14.onrender.com/api/accounts/register/', formData);
       alert(response.data.message); // Show success message
       handleSignInClickmarketingpage();
     } catch (error) {
