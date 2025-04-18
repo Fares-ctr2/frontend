@@ -117,7 +117,7 @@ export default function SignUp(props) {
     }
 
     try {
-      const response = await axios.post('https://myproject-15.onrender.com/api/accounts/register/', formData);
+      const response = await axios.post('https://fares147.pythonanywhere.com/api/accounts/register/', formData);
       alert(response.data.message); // Show success message
       handleSignInClickmarketingpage();
     } catch (error) {
